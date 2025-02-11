@@ -1,0 +1,1 @@
+# shoppyGlobal-app
