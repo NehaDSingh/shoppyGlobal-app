@@ -1,0 +1,51 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+}
+
+.footer .first,
+.footer .second,
+.footer .fourth {
+  flex: 1;
+}
+
+.footer .second ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .second li {
+  margin: 10px 0;
+}
+
+.footer .second a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer .second a:hover {
+  color: #ffcc00; /* Add hover effect */
+}
+
+.footer .contact-title {
+  font-weight: bold;
+}
+
+.footer .email {
+  margin-top: 10px;
+}
+
+.footer .email a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.footer .email a:hover {
+  text-decoration: underline;
+}

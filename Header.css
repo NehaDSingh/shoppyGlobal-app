@@ -1,0 +1,60 @@
+.logo{
+  font-size: x-large;
+}
+
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #7a93ed9d;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for menu */
+}
+
+.menu.active {
+  transform: translateX(0); /* Active menu state */
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.bar {
+  display: none; /* Hide the menu icon on larger screens */
+  cursor: pointer;
+}
+
+.cart-count {
+  background-color: #ff0000;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    transform: translateX(100%); /* Menu hidden by default on mobile */
+  }
+
+  .bar {
+    display: block; /* Show menu icon on mobile */
+  }
+
+  .Navbar {
+    flex-direction: column;
+  }
+}
